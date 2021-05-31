@@ -6,6 +6,7 @@ metadata:
   namespace: confluent
 spec:
   replicas: 1
+  configOverrides:  ----> configuration overrides
   image:
     application: gcr.io/sales-engineering-206314/cp-server-connect-operator-ganne@sha256:5a7c6ab995ed80c13d3d63bce9d3ecb0fccba5bb7295baa464277719983e412e
     init: confluentinc/cp-init-container-operator:6.1.0.0
